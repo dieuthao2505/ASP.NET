@@ -10,8 +10,10 @@ namespace VoThiDieuThao_2122110335.Model
         [Column(TypeName = "decimal(18,2)")] // Định nghĩa kiểu dữ liệu trong SQL Server
         public decimal Price { get; set; }
         public string Image { get; set; }  // URL hình ảnh sản phẩm
+        public string Description { get; set; }
+
 
     }
-        
+
 }
  
