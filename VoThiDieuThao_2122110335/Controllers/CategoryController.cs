@@ -3,8 +3,6 @@ using Microsoft.EntityFrameworkCore;
 using VoThiDieuThao_2122110335.Data;
 using VoThiDieuThao_2122110335.Model;
 
-// For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-
 namespace VoThiDieuThao_2122110335.Controllers
 {
     [Route("api/[controller]")]
@@ -19,13 +17,15 @@ namespace VoThiDieuThao_2122110335.Controllers
         }
 
         // GET: api/Category
+        // Lấy danh sách tất cả danh mục
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Category>>> GetCategories()
         {
             return await _context.Categories.ToListAsync();
         }
 
-        // GET api/Category/5
+        // GET: api/Category/5
+        // Lấy thông tin danh mục theo ID
         [HttpGet("{id}")]
         public async Task<ActionResult<Category>> GetCategory(int id)
         {
@@ -33,13 +33,14 @@ namespace VoThiDieuThao_2122110335.Controllers
 
             if (category == null)
             {
-                return NotFound();
+                return NotFound(); // Trả về 404 nếu không tìm thấy
             }
 
             return category;
         }
 
-        // POST api/Category
+        // POST: api/Category
+        // Thêm mới danh mục
         [HttpPost]
         public async Task<ActionResult<Category>> PostCategory([FromBody] Category category)
         {
@@ -49,13 +50,14 @@ namespace VoThiDieuThao_2122110335.Controllers
             return CreatedAtAction(nameof(GetCategory), new { id = category.Id }, category);
         }
 
-        // PUT api/Category/5
+        // PUT: api/Category/5
+        // Cập nhật thông tin danh mục
         [HttpPut("{id}")]
         public async Task<IActionResult> PutCategory(int id, [FromBody] Category category)
         {
             if (id != category.Id)
             {
-                return BadRequest();
+                return BadRequest(); // Trả về lỗi nếu ID không khớp
             }
 
             _context.Entry(category).State = EntityState.Modified;
@@ -68,7 +70,7 @@ namespace VoThiDieuThao_2122110335.Controllers
             {
                 if (!CategoryExists(id))
                 {
-                    return NotFound();
+                    return NotFound(); // Nếu không tìm thấy thì trả về lỗi 404
                 }
                 else
                 {
@@ -76,25 +78,27 @@ namespace VoThiDieuThao_2122110335.Controllers
                 }
             }
 
-            return NoContent();
+            return NoContent(); // Thành công nhưng không trả dữ liệu
         }
 
-        // DELETE api/Category/5
+        // DELETE: api/Category/5
+        // Xóa danh mục theo ID
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCategory(int id)
         {
             var category = await _context.Categories.FindAsync(id);
             if (category == null)
             {
-                return NotFound();
+                return NotFound(); // Không tìm thấy danh mục
             }
 
             _context.Categories.Remove(category);
             await _context.SaveChangesAsync();
 
-            return NoContent();
+            return NoContent(); // Trả về 204
         }
 
+        // Kiểm tra danh mục có tồn tại không
         private bool CategoryExists(int id)
         {
             return _context.Categories.Any(e => e.Id == id);

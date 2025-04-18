@@ -11,8 +11,8 @@ using VoThiDieuThao_2122110335.Data;
 namespace VoThiDieuThao_2122110335.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250328090325_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250404062126_AddDescriptionToProduct")]
+    partial class AddDescriptionToProduct
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -30,6 +30,10 @@ namespace VoThiDieuThao_2122110335.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Image")
                         .IsRequired()

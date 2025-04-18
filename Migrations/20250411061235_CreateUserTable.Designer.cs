@@ -11,8 +11,8 @@ using VoThiDieuThao_2122110335.Data;
 namespace VoThiDieuThao_2122110335.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20250404063809_UpdateDatabaseSchema")]
-    partial class UpdateDatabaseSchema
+    [Migration("20250411061235_CreateUserTable")]
+    partial class CreateUserTable
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -56,6 +56,9 @@ namespace VoThiDieuThao_2122110335.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<int>("CategoryId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Description")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -74,7 +77,23 @@ namespace VoThiDieuThao_2122110335.Migrations
 
                     b.HasKey("Id");
 
+                    b.HasIndex("CategoryId");
+
                     b.ToTable("Products");
+                });
+
+            modelBuilder.Entity("VoThiDieuThao_2122110335.Model.Product", b =>
+                {
+                    b.HasOne("VoThiDieuThao_2122110335.Model.Category", null)
+                        .WithMany("Products")
+                        .HasForeignKey("CategoryId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
+            modelBuilder.Entity("VoThiDieuThao_2122110335.Model.Category", b =>
+                {
+                    b.Navigation("Products");
                 });
 #pragma warning restore 612, 618
         }

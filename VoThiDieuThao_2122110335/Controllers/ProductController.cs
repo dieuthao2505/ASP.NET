@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using VoThiDieuThao_2122110335.Data;
 using VoThiDieuThao_2122110335.Model;
@@ -15,6 +16,10 @@ namespace VoThiDieuThao_2122110335.Controllers
         {
             _context = context;
         }
+        // POST: api/Product (Thêm sản phẩm mới với ảnh)
+
+
+
 
         // GET: api/Product (Lấy danh sách sản phẩm)
         [HttpGet]
@@ -95,6 +100,65 @@ namespace VoThiDieuThao_2122110335.Controllers
 
             return NoContent();
         }
+        // Upload hình ảnh cho sản phẩm
+        [Authorize(Policy = "AdminPolicy")]
+        [HttpPut("{id}/image")]
+        public async Task<IActionResult> UpdateProductImage(int id, IFormFile image)
+        {
+            if (image == null || image.Length == 0)
+            {
+                return BadRequest("No image uploaded.");
+            }
+
+            var product = await _context.Products.FirstOrDefaultAsync(p => p.Id == id);
+            if (product == null)
+            {
+                return NotFound(new { message = "Product not found" });
+            }
+
+            // Save file into wwwroot/images
+            var fileName = Path.GetFileName(image.FileName);
+            var uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/images");
+
+            Directory.CreateDirectory(uploadPath); // Create directory if it doesn't exist
+
+            var filePath = Path.Combine(uploadPath, fileName);
+            using (var stream = new FileStream(filePath, FileMode.Create))
+            {
+                await image.CopyToAsync(stream);
+            }
+
+            // Update image path in the database
+            product.Image = "/images/" + fileName;
+            _context.Products.Update(product);
+            await _context.SaveChangesAsync();
+
+            // Trả về thông tin sản phẩm đã cập nhật
+            return Ok(product); // Trả về đối tượng Product, không cần DTO
+        }
+
+        // Lấy hình ảnh của sản phẩm
+        [HttpGet("{id}/image")]
+        public async Task<IActionResult> GetProductImage(int id)
+        {
+            var product = await _context.Products.FindAsync(id);
+            if (product == null || string.IsNullOrEmpty(product.Image))
+            {
+                return NotFound("Product or image not found");
+            }
+
+            var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", product.Image.TrimStart('/'));
+
+            if (!System.IO.File.Exists(filePath))
+            {
+                return NotFound("Image file not found");
+            }
+
+            var imageBytes = await System.IO.File.ReadAllBytesAsync(filePath);
+            var contentType = "image/" + Path.GetExtension(filePath).Trim('.'); // Ví dụ: image/jpg, image/png
+
+            return File(imageBytes, contentType);
+        }
     }
-}
+    }
 
