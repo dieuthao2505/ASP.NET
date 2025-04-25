@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="QLIKHACHHANGModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'QLIKHACHHANG.dbo.Product' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="Product">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="255" />
+    <Property Name="Avatar" Type="varchar" MaxLength="50" />
+    <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
+  </EntityType>
+  <EntityContainer Name="QLIKHACHHANGModelStoreContainer">
+    <EntitySet Name="Product" EntityType="Self.Product" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Product].[id] AS [id], 
+    [Product].[Name] AS [Name], 
+    [Product].[Avatar] AS [Avatar], 
+    [Product].[Price] AS [Price]
+    FROM [dbo].[Product] AS [Product]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

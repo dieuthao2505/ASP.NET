@@ -1,0 +1,210 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ASP.NET\\thao\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|d:\\asp.net\\thao\\thao\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|solutionrelative:thao\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|d:\\asp.net\\thao\\thao\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|solutionrelative:thao\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|d:\\asp.net\\thao\\thao\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|solutionrelative:thao\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|d:\\asp.net\\thao\\thao\\controllers\\qlikhachhangentities1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|solutionrelative:thao\\controllers\\qlikhachhangentities1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|d:\\asp.net\\thao\\thao\\data\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|solutionrelative:thao\\data\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|d:\\asp.net\\thao\\thao\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|solutionrelative:thao\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|d:\\asp.net\\thao\\thao\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|solutionrelative:thao\\views\\product\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|d:\\asp.net\\thao\\thao\\data\\model2.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|solutionrelative:thao\\data\\model2.context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|d:\\asp.net\\thao\\thao\\data\\model2.tt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|solutionrelative:thao\\data\\model2.tt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|d:\\asp.net\\thao\\thao\\data\\model2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|solutionrelative:thao\\data\\model2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|d:\\asp.net\\thao\\thao\\data\\model2.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|",
+      "RelativeMoniker": "D:0:0:{81B2E81D-7A63-4AD3-9E62-A1CAACDF3CDF}|thao\\thao.csproj|solutionrelative:thao\\data\\model2.edmx||{C99AEA30-8E36-4515-B76F-496F5A48A6AA}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ASP.NET\\thao\\thao\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "thao\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\ASP.NET\\thao\\thao\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "thao\\Views\\Product\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T09:36:40.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ASP.NET\\thao\\thao\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "thao\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\ASP.NET\\thao\\thao\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "thao\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAkwBwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T08:27:02.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\thao\\thao\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "thao\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\ASP.NET\\thao\\thao\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "thao\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAgwAwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T07:50:05.498Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\thao\\thao\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "thao\\Controllers\\HomeController.cs",
+              "ToolTip": "D:\\ASP.NET\\thao\\thao\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "thao\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T08:26:17.223Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "QLIKHACHHANGEntities1.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\thao\\thao\\Controllers\\QLIKHACHHANGEntities1.cs",
+              "RelativeDocumentMoniker": "thao\\Controllers\\QLIKHACHHANGEntities1.cs",
+              "ToolTip": "D:\\ASP.NET\\thao\\thao\\Controllers\\QLIKHACHHANGEntities1.cs",
+              "RelativeToolTip": "thao\\Controllers\\QLIKHACHHANGEntities1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T08:52:14.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\thao\\thao\\Data\\Product.cs",
+              "RelativeDocumentMoniker": "thao\\Data\\Product.cs",
+              "ToolTip": "D:\\ASP.NET\\thao\\thao\\Data\\Product.cs",
+              "RelativeToolTip": "thao\\Data\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T08:18:26.922Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Model2.Context.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\thao\\thao\\Data\\Model2.Context.cs",
+              "RelativeDocumentMoniker": "thao\\Data\\Model2.Context.cs",
+              "ToolTip": "D:\\ASP.NET\\thao\\thao\\Data\\Model2.Context.cs",
+              "RelativeToolTip": "thao\\Data\\Model2.Context.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAUwBsAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T08:48:08.113Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "D:\\ASP.NET\\thao\\thao\\Views\\Product\\Create.cshtml",
+              "RelativeDocumentMoniker": "thao\\Views\\Product\\Create.cshtml",
+              "ToolTip": "D:\\ASP.NET\\thao\\thao\\Views\\Product\\Create.cshtml",
+              "RelativeToolTip": "thao\\Views\\Product\\Create.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAcwDgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-21T09:13:48.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Model2.tt",
+              "DocumentMoniker": "D:\\ASP.NET\\thao\\thao\\Data\\Model2.tt",
+              "RelativeDocumentMoniker": "thao\\Data\\Model2.tt",
+              "ToolTip": "D:\\ASP.NET\\thao\\thao\\Data\\Model2.tt",
+              "RelativeToolTip": "thao\\Data\\Model2.tt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-03-21T08:44:50.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Model2.edmx [Diagram1]",
+              "DocumentMoniker": "D:\\ASP.NET\\thao\\thao\\Data\\Model2.edmx",
+              "RelativeDocumentMoniker": "thao\\Data\\Model2.edmx",
+              "ToolTip": "D:\\ASP.NET\\thao\\thao\\Data\\Model2.edmx [Diagram1]",
+              "RelativeToolTip": "thao\\Data\\Model2.edmx [Diagram1]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001116|",
+              "WhenOpened": "2025-03-21T08:09:47.832Z",
+              "EditorCaption": " [Diagram1]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Model2.cs",
+              "DocumentMoniker": "D:\\ASP.NET\\thao\\thao\\Data\\Model2.cs",
+              "RelativeDocumentMoniker": "thao\\Data\\Model2.cs",
+              "ToolTip": "D:\\ASP.NET\\thao\\thao\\Data\\Model2.cs",
+              "RelativeToolTip": "thao\\Data\\Model2.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T08:18:24.525Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
